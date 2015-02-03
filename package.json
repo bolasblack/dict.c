@@ -1,0 +1,19 @@
+{
+  "name": "dict",
+  "version": "0.0.1",
+  "repo": "bolasblack/dict",
+  "description": "Simple dict",
+  "keywords": ["dict", "structure"],
+  "license": "MIT",
+  "src": [
+    "src/dict_iterator.c",
+    "src/dict_piar.c",
+    "src/dict.c",
+    "src/dict.h"
+  ],
+  "dependencies": {
+  },
+  "development": {
+    "bench": "*"
+  }
+}
