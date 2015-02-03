@@ -1,8 +1,7 @@
-
 //
 // dict.c
 //
-// Copyright (c) 2010 TJ Holowaychuk <tj@vision-media.ca>
+// Copyright (c) 2015 c4605 <bolasblack@gmail.com>
 //
 
 #include "dict.h"
