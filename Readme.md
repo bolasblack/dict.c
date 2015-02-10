@@ -66,7 +66,8 @@ Allocate and initialize a `dict_iterator_t`.
 dict_pair_t *pair;
 dict_iterator_t *it = dict_iterator_new(dict);
 while ((pair = dict_iterator_next(it))) {
-  puts(node->key);
+  puts(pair->key);
+  puts(pair->val);
 }
 ```
 
@@ -96,7 +97,8 @@ dict_pair_t *ruby = dict_set(langs, "ruby", "ruby");
 dict_pair_t *pair;
 dict_iterator_t *it = dict_iterator_new(langs);
 while ((pair = dict_iterator_next(it))) {
-  puts(node->val);
+  puts(pair->key);
+  puts(pair->val);
 }
 
 dict_iterator_destroy(it);
