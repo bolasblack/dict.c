@@ -46,7 +46,7 @@ typedef struct dict_pair {
 typedef struct {
   dict_pair_t *head;
   dict_pair_t *tail;
-  void (*free)(void *val);
+  void (*free)(char *key, void *val);
 } dict_t;
 
 /*

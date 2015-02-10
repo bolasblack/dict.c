@@ -32,7 +32,7 @@ dict_destroy(dict_t *self) {
 
   while (curr) {
     next = curr->next;
-    if (self->free) self->free(curr->val);
+    if (self->free) self->free(curr->key, curr->val);
     DICT_FREE(curr);
     curr = next;
   }
@@ -49,7 +49,7 @@ dict_set(dict_t *self, char *key, void *val) {
   dict_pair_t *pair = dict_get(self, key);
 
   if (pair) {
-    if (self->free) self->free(pair->val);
+    if (self->free) self->free(pair->key, pair->val);
     pair->val = val;
   } else {
     pair = dict_pair_new(key, val);
@@ -105,7 +105,7 @@ dict_remove(dict_t *self, char *key) {
     ? (pair->next->prev = pair->prev)
     : (self->tail = pair->prev);
 
-  if (self->free) self->free(pair->val);
+  if (self->free) self->free(pair->key, pair->val);
 
   DICT_FREE(pair);
 }

@@ -14,7 +14,7 @@
 static int freeProxyCalls = 0;
 
 void
-freeProxy(void *val) {
+freeProxy(char *key, void *val) {
   ++freeProxyCalls;
   free(val);
 }
