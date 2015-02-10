@@ -7,7 +7,7 @@
   "license": "MIT",
   "src": [
     "src/dict_iterator.c",
-    "src/dict_piar.c",
+    "src/dict_pair.c",
     "src/dict.c",
     "src/dict.h"
   ],
