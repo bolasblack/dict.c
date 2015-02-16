@@ -62,7 +62,7 @@ typedef struct {
 dict_pair_t *
 dict_pair_new(char *key, void *val);
 
-// list_t prototypes.
+// dict_t prototypes.
 
 dict_t *
 dict_new();

@@ -21,7 +21,7 @@ uninstall:
 	rm -f $(PREFIX)/lib/libdict.a
 	rm -f $(PREFIX)/include/dict.h
 
-build/liblist.a: $(OBJS)
+build/libdict.a: $(OBJS)
 	@mkdir -p build
 	$(AR) rcs $@ $^
 
