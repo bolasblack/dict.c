@@ -16,7 +16,7 @@ extern "C" {
 
 // Library version
 
-#define DICT_VERSION "0.0.1"
+#define DICT_VERSION "0.0.2"
 
 // Memory management macros
 
