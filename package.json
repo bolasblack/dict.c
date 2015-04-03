@@ -1,7 +1,7 @@
 {
-  "name": "dict",
+  "name": "dict.c",
   "version": "0.0.1",
-  "repo": "bolasblack/dict",
+  "repo": "bolasblack/dict.c",
   "description": "Simple dict",
   "keywords": ["dict", "structure"],
   "license": "MIT",
